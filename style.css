@@ -17,6 +17,10 @@ div.team-nav-banner {
     width: auto;
     display: flex;
     justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    top: 0;
 }
 
 img.nav-icon {
@@ -47,14 +51,13 @@ img.team-header {
 span.bg-team-name {
     position: absolute;
     top: 50%;
-    transform: translate(10%);
+    transform: translate(10%, -20%);
     white-space: nowrap;
     float: left;
     font-size: 100px;
     line-height: 0.6;
     text-transform: uppercase;
     color: white;
-
 }
 
 div.result-and-factoids {
@@ -116,6 +119,7 @@ div.result-right-wrap {
 
 img.top-player {
     border-radius: 5px;
+    border: 1px solid #00b664;
     max-width: 65px;
     max-height: 90px;
 }
@@ -126,7 +130,7 @@ div.top-stats {
     line-height: 0.6;
     height: 90%;
     margin: 10px;
-    border-right: 2px solid #ececec;
+    border-right: 2px solid #00b664;
 }
 
 div.show-details {
@@ -151,5 +155,79 @@ p.show-details {
 
 a.home {
     display: block;
-    align-content: end;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** MLB - Red Sox*/
+
+img.sox-champs {
+    display: block;
+    border: 1px solid #B83039;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.mlb-game-result {
+    width: 19%;
+    display: inline-block;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+table.nfl-game-result {
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+div.img-container {
+    display: table-cell;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+}
+
+img.table-team-logo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div.mlb-teamdata {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+p.mlb-record, td.mlb-series-standing {
+    font-size: 10px;
+    line-height: 14px;
+    color: gray;
+}
+
+
+th, tr, td {
+    font-family: 'RobotoRegular', sans-serif;
+    text-align: left;
+    width: 100%;
+    min-width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+span.mlb-winner {
+    font-weight: bold;
+}
+
+td.score-winner {
+    font-weight: bold;
 }

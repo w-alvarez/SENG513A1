@@ -172,15 +172,16 @@ img.sox-champs {
 }
 
 table.mlb-game-result {
-    width: 19%;
+    width: 30%;
     display: inline-block;
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-table.nfl-game-result {
+table.nfl-game-result, table.qb-comparison {
     width: 40%;
     display: inline-block;
     border: 1px solid black;
@@ -203,11 +204,12 @@ img.table-team-logo {
     max-width: 100%;
 }
 
-div.mlb-teamdata {
+div.sport-teamdata {
     display: table-cell;
     vertical-align: middle;
     line-height: 1.2;
 }
+
 p.mlb-record, td.mlb-series-standing {
     font-size: 10px;
     line-height: 14px;
@@ -215,19 +217,45 @@ p.mlb-record, td.mlb-series-standing {
 }
 
 
-th, tr, td {
+table.mlb-game-result th, tr, td {
     font-family: 'RobotoRegular', sans-serif;
     text-align: left;
     width: 100%;
-    min-width: fit-content;
     padding-right: 10px;
     padding-bottom: 5px;
 }
 
-span.mlb-winner {
-    font-weight: bold;
+table.nfl-game-result th, tr, td, table.qb-comparison th, tr, td {
+    font-family: 'RobotoRegular', sans-serif;
+    text-align: center;
+    text-align: -moz-center;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.qb-comparison th, tr, td, .nfl-record {
+    width: fit-content;
+    text-align: center;
+}
+
+.nfl-team-info {
+    width: 100%;
+
+}
+
+
+td.nfl-seed, th.hdr-first-col {
+    text-align: left !important;
+    text-align: -moz-left;
+    vertical-align: middle;
+    width: fit-content;
+    padding-left: 10px;
+}
+
+span.team-winner {
+    font-weight: bolder;
 }
 
 td.score-winner {
-    font-weight: bold;
+    font-weight: bolder;
 }

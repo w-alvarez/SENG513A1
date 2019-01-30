@@ -207,6 +207,8 @@ img.table-team-logo {
 div.sport-teamdata {
     display: table-cell;
     vertical-align: middle;
+    text-align: left;
+    text-align: -moz-left;
     line-height: 1.2;
 }
 
@@ -249,6 +251,7 @@ td.nfl-seed, th.hdr-first-col {
     text-align: -moz-left;
     vertical-align: middle;
     width: fit-content;
+    width: -moz-fit-content;
     padding-left: 10px;
 }
 
@@ -258,4 +261,9 @@ span.team-winner {
 
 td.score-winner {
     font-weight: bolder;
+}
+
+tr.tbl-spacer {
+    border-top: 1px solid #ececec;
+    height: 20px;
 }
